@@ -29,6 +29,14 @@ $heading-text-transform: uppercase;
 $heading-letter-spacing: $letter-spacing-loose;
 $heading-line-height: 1;
 
+// Border radius
+$border-radius-1: $size-2;
+$border-radius-2: $size-4;
+
+// Shadows
+$box-shadow-1: 0 $size-1 $size-4 rgb(0 0 0 / 0.05);
+$box-shadow-2: 0 $size-1 $size-4 rgb(0 0 0 / 0.15);
+
 // Layout
 $grid-gap: $size-6;
 $flex-group-gap: $size-4;
@@ -48,7 +56,7 @@ $card-body-padding: $size-8;
 
 // Buttons
 $button-border: 0;
-$button-border-radius: $size-2;
+$button-border-radius: $border-radius-1;
 $button-padding-default: 0.75em 2em;
 $button-font-family: $body-font-family;
 $button-font-size: $font-size-600;
@@ -67,6 +75,8 @@ $button-primary-background-hover: $color-primary-800;
 
 // Cards
 $card-flow-spacing: $size-2;
+$card-box-shadow: $box-shadow-1;
+$card-border-radius: $border-radius-2;
 $card-body-padding: $size-8;
 $card-background-default: $color-primary-100;
 $card-color-default: $body-background-color;
