@@ -10,7 +10,7 @@ $color-text-interactive-hover: $color-accent-500;
 
 $letter-spacing-loose: 0.16em;
 
-// body
+// Body
 $body-font-family: $font-family-base;
 $body-font-size: $font-size-400;
 $body-line-height: 1.5;
@@ -18,9 +18,16 @@ $body-font-weight: $font-weight-default;
 $body-text-color: $color-text-default;
 $body-background-color: $color-background-default;
 
-// general
+// General
 $link-color: $color-text-interactive-default;
 $link-color-hover: $color-text-interactive-hover;
+
+$heading-color-default: $body-text-color;
+$heading-font-family: $font-family-accent;
+$heading-font-weight: $font-weight-bold;
+$heading-text-transform: uppercase;
+$heading-letter-spacing: $letter-spacing-loose;
+$heading-line-height: 1;
 
 // Layout
 $grid-gap: $size-6;
@@ -67,9 +74,4 @@ $card-font-family: $body-font-family;
 $card-line-height: 1.25;
 
 $card-heading-color-default: $card-color-default;
-$card-heading-font-family: $font-family-accent;
 $card-heading-font-size: $font-size-600;
-$card-heading-font-weight: $font-weight-bold;
-$card-heading-text-transform: uppercase;
-$card-heading-letter-spacing: $letter-spacing-loose;
-$card-heading-line-height: 1;
