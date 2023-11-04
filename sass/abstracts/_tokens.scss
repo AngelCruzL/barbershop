@@ -39,3 +39,21 @@ $container-max-width-wide: 75rem;
 
 $card-body-padding: $size-8;
 
+// Buttons
+$button-border: 0;
+$button-border-radius: $size-2;
+$button-padding-default: 0.75em 2em;
+$button-font-family: $body-font-family;
+$button-font-size: $font-size-600;
+$button-font-weight: $font-weight-bold;
+$button-text-transform: none;
+
+$button-accent-color: $color-neutral-100;
+$button-accent-color-hover: $color-neutral-100;
+$button-accent-background: $color-accent-400;
+$button-accent-background-hover: $color-accent-500;
+
+$button-primary-color: $color-neutral-100;
+$button-primary-color-hover: $color-neutral-100;
+$button-primary-background: $color-primary-700;
+$button-primary-background-hover: $color-primary-800;
