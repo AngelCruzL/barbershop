@@ -7,8 +7,14 @@
 
   &__layout {
     display: flex;
-    gap: $size-4;
+    flex-direction: column;
     justify-content: $site-header-justification;
-    align-items: $site-header-alignment;
+    align-items: $site-header-alignment-mobile;
+    gap: $size-4;
+
+    @include mq(small) {
+      flex-direction: row;
+      align-items: $site-header-alignment;
+    }
   }
 }
