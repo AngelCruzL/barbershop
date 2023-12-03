@@ -1,8 +1,6 @@
 @use '../abstracts' as *;
 
 .hero {
-  padding-block: $hero-padding-block;
-
   .even-columns {
     gap: $hero-gap;
   }
