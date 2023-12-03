@@ -1,0 +1,26 @@
+@use "../abstracts" as *;
+
+.footer {
+  padding-block: $footer-padding-block;
+  background-color: $footer-background-color;
+  color: $footer-color;
+
+  &__layout {
+    display: grid;
+    justify-items: center;
+    gap: $size-2;
+  }
+
+  &__copy {
+    text-wrap: balance;
+  }
+
+  a {
+    color: $footer-link-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $footer-link-color-hover;
+    }
+  }
+}
