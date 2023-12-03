@@ -9,12 +9,11 @@
     display: flex;
     flex-direction: column;
     justify-content: $site-header-justification;
-    align-items: $site-header-alignment-mobile;
+    align-items: $site-header-alignment;
     gap: $size-4;
 
     @include mq(small) {
       flex-direction: row;
-      align-items: $site-header-alignment;
     }
   }
 }

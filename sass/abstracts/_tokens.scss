@@ -2,7 +2,7 @@
 @use "typography" as *;
 @use "sizes" as *;
 
-//$active-theme: $light;
+$active-theme: $light;
 $active-theme: $dark;
 
 // Contextual
@@ -39,6 +39,14 @@ $border-radius-2: $size-4;
 // Shadows
 $box-shadow-1: 0 $size-1 $size-4 rgb(0 0 0 / 0.05);
 $box-shadow-2: 0 $size-1 $size-4 rgb(0 0 0 / 0.15);
+
+// Logo
+$logo-fill-default: $color-primary-400;
+$logo-fill-header: $color-primary-300;
+$logo-fill-footer: $color-accent-400;
+$logo-size-default: 15rem;
+$logo-size-header: $logo-size-default;
+$logo-size-footer: $logo-size-default;
 
 // Layout
 $grid-gap: $size-6;
@@ -88,8 +96,7 @@ $card-heading-font-size: $font-size-600;
 
 // Site header
 $site-header-justification: space-between;
-$site-header-alignment: flex-start;
-$site-header-alignment-mobile: center;
+$site-header-alignment: center;
 $site-header-margin: 0;
 $site-header-padding: $size-8 0;
 $site-header-background-color: $color-primary-800;
