@@ -1,0 +1,57 @@
+@use "../abstracts" as *;
+
+.schedule {
+  #schedule-heading {
+    @include heading($schedule-heading-font-size);
+  }
+
+  &__copy {
+    text-wrap: balance;
+  }
+
+  &__hours {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: $schedule-hours-gap;
+    margin-block-start: $schedule-hours-margin-block-start-mobile;
+
+    @include mq(small) {
+      margin-block-start: $schedule-hours-margin-block-start;
+    }
+  }
+
+  &__hour {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      block-size: 18px;
+      inline-size: 1px;
+      inset-block-start: 5px;
+      background-color: $schedule-vertical-line-color;
+    }
+
+    &::before {
+      inset-inline-start: -#{$schedule-vertical-line-padding};
+
+      // TODO: Fix vertical lines
+      @include mq(small) {
+        &:nth-child(odd) {
+          display: none;
+        }
+      }
+    }
+
+    &::after {
+      inset-inline-end: -#{$schedule-vertical-line-padding};
+    }
+
+    h3 {
+      @include heading($card-heading-font-size, $schedule-heading-color);
+    }
+  }
+}

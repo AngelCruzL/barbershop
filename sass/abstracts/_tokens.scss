@@ -118,3 +118,12 @@ $services-background-color: $color-primary-200;
 $services-heading-font-size: $font-size-800;
 $services-button-margin-block-start: $size-10;
 $services-button-margin-block-start-mobile: $size-11;
+
+// Schedule
+$schedule-heading-font-size: $font-size-800;
+$schedule-heading-color: $color-primary-400;
+$schedule-hours-gap: $size-11;
+$schedule-hours-margin-block-start: $size-10;
+$schedule-hours-margin-block-start-mobile: $size-11;
+$schedule-vertical-line-color: $color-primary-300;
+$schedule-vertical-line-padding: calc($schedule-hours-gap / 2);
