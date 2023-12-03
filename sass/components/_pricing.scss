@@ -1,0 +1,35 @@
+@use "../abstracts" as *;
+
+.pricing {
+  background-color: $pricing-background-color;
+
+  #pricing-heading {
+    @include heading($pricing-heading-font-size);
+  }
+
+  &__layout {
+    display: flex;
+    flex-direction: column;
+    gap: $size-10;
+    margin-block-start: $size-12;
+  }
+
+  .even-columns {
+    --grid-gap: #{$size-10};
+  }
+
+  &__heading {
+    @include heading($pricing-item-heading-font-size-mobile, $pricing-item-heading-color);
+
+    @include mq(small) {
+      font-size: $pricing-item-heading-font-size;
+    }
+  }
+
+  &__price {
+    margin-block-start: $size-2;
+    font-family: $pricing-item-copy-font-family;
+    font-size: $pricing-item-copy-font-size;
+    font-weight: $pricing-item-copy-font-weight;
+  }
+}

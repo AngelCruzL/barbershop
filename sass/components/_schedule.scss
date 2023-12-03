@@ -6,6 +6,7 @@
   }
 
   &__copy {
+    font-size: $schedule-copy-font-size;
     text-wrap: balance;
   }
 
@@ -29,9 +30,9 @@
       content: '';
       position: absolute;
       display: block;
-      block-size: 18px;
+      block-size: 24px;
       inline-size: 1px;
-      inset-block-start: 5px;
+      inset-block-start: 12px;
       background-color: $schedule-vertical-line-color;
     }
 
@@ -51,7 +52,7 @@
     }
 
     h3 {
-      @include heading($card-heading-font-size, $schedule-heading-color);
+      @include heading($schedule-item-font-size, $schedule-item-heading-color);
     }
   }
 }

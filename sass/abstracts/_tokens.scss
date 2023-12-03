@@ -121,9 +121,21 @@ $services-button-margin-block-start-mobile: $size-11;
 
 // Schedule
 $schedule-heading-font-size: $font-size-800;
-$schedule-heading-color: $color-primary-400;
 $schedule-hours-gap: $size-11;
 $schedule-hours-margin-block-start: $size-10;
 $schedule-hours-margin-block-start-mobile: $size-11;
 $schedule-vertical-line-color: $color-primary-300;
 $schedule-vertical-line-padding: calc($schedule-hours-gap / 2);
+$schedule-copy-font-size: $font-size-600;
+$schedule-item-heading-color: $color-primary-400;
+$schedule-item-font-size: $size-7;
+
+// Pricing
+$pricing-background-color: $color-primary-200;
+$pricing-heading-font-size: $font-size-800;
+$pricing-item-heading-color: $color-primary-400;
+$pricing-item-heading-font-size: $size-7;
+$pricing-item-heading-font-size-mobile: $size-6;
+$pricing-item-copy-font-family: $font-family-accent;
+$pricing-item-copy-font-size: $font-size-600;
+$pricing-item-copy-font-weight: $font-weight-semi-bold;
