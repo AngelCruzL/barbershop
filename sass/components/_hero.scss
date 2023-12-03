@@ -1,0 +1,43 @@
+@use '../abstracts' as *;
+
+.hero {
+  padding-block: $hero-padding-block;
+
+  .even-columns {
+    gap: $hero-gap;
+  }
+
+  #hero-heading {
+    @include heading($hero-heading-font-size);
+    text-align: $hero-heading-text-align-mobile;
+    letter-spacing: $hero-heading-letter-spacing-mobile;
+
+    @include mq(small) {
+      text-align: $hero-heading-text-align;
+      letter-spacing: $hero-heading-letter-spacing;
+    }
+  }
+
+  &__copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $size-5;
+    text-align: $hero-copy-text-align-mobile;
+
+    .flex-group {
+      justify-content: center;
+      row-gap: $size-5;
+    }
+
+    @include mq(small) {
+      text-align: $hero-copy-text-align;
+    }
+  }
+
+  &__image {
+    overflow: hidden;
+    justify-self: end;
+    border-radius: $hero-image-border-radius;
+  }
+}
