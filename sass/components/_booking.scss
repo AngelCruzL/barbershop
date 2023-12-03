@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.booking {
+  #booking-heading {
+    @include heading($booking-heading-font-size);
+  }
+
+  &__copy {
+    font-size: $booking-copy-font-size;
+  }
+
+  .contact-form {
+    margin-block-start: $booking-form-margin-block-start-mobile;
+
+    @include mq(small) {
+      margin-block-start: $booking-form-margin-block-start;
+    }
+  }
+}
