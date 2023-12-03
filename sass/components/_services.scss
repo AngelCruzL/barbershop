@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.services {
+  background-color: $services-background-color;
+
+  &__layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #services-heading {
+    @include heading($services-heading-font-size);
+  }
+
+  .button {
+    align-self: center;
+    margin-block-start: $services-button-margin-block-start-mobile;
+
+    @include mq(small) {
+      margin-block-start: $services-button-margin-block-start;
+    }
+  }
+}

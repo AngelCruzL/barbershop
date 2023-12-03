@@ -16,3 +16,7 @@ a {
 a:is(:hover, :focus) {
   color: $link-color-hover;
 }
+
+section {
+  padding-block: $section-padding-block;
+}
